@@ -31,7 +31,7 @@ def initialise():
     """Setup the settings dict structure with default values"""
     isettings = {'LastSave': '01/01/2000 00:00:01',
                  'api-key': 'change-me',
-                 'app-name': 'Oxide X-Y Stage Controler',
+                 'app-name': 'Oxide X-Y Stage Controller',
                  'cputemp': '/sys/class/thermal/thermal_zone0/temp',
                  'gunicornpath': './logs/',
                  'logappname': 'XY-Control-Py',
@@ -85,8 +85,8 @@ def readsettings():
         return {}
 
 def loadsettings():
-    """Replace the default settings with thsoe from the json files, if a setting is not in the json file (e.g. it is a
-     new feature setitng) then retain the default value and write that to the json file. If the api-key is the default
+    """Replace the default settings with those from the json files, if a setting is not in the json file (e.g. it is a
+     new feature setting) then retain the default value and write that to the json file. If the api-key is the default
     value then generate a new key and save it."""
     global settings
     settingschanged = False

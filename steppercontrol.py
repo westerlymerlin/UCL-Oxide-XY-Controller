@@ -48,52 +48,6 @@ class StepperClass:
     calibration capabilities to define the valid range of motion. The settings
     configuration is used for storing and updating operational parameters.
 
-    :ivar axis: The identifier or name of the stepper motor axis.
-    :type axis: str
-    :ivar seq: The step sequence used by the stepper motor to move.
-    :type seq: list[list[int]]
-    :ivar channela: GPIO pin controlling the first output channel of the stepper motor.
-    :type channela: int
-    :ivar channelaa: GPIO pin controlling the second output channel of the stepper motor.
-    :type channelaa: int
-    :ivar channelb: GPIO pin controlling the third output channel of the stepper motor.
-    :type channelb: int
-    :ivar channelbb: GPIO pin controlling the fourth output channel of the stepper motor.
-    :type channelbb: int
-    :ivar sequenceindex: Current index in the step sequence.
-    :type sequenceindex: int
-    :ivar channelupperlimit: GPIO pin for the maximum limit switch.
-    :type channelupperlimit: int
-    :ivar channellowerlimit: GPIO pin for the minimum limit switch.
-    :type channellowerlimit: int
-    :ivar channelmoveled: GPIO pin for the movement indicator LED.
-    :type channelmoveled: int
-    :ivar positionsetting: Name of the settings key for the stepper's position.
-    :type positionsetting: str
-    :ivar upperlimitsetting: Name of the settings key for the maximum limit value.
-    :type upperlimitsetting: str
-    :ivar lowerlimitsetting: Name of the settings key for the minimum limit value.
-    :type lowerlimitsetting: str
-    :ivar position: Current position of the stepper motor.
-    :type position: int
-    :ivar upperlimit: Maximum position value allowed for the stepper motor.
-    :type upperlimit: int
-    :ivar lowerlimit: Minimum position value allowed for the stepper motor.
-    :type lowerlimit: int
-    :ivar maxswitch: State of the max limit switch.
-    :type maxswitch: int
-    :ivar minswitch: State of the min limit switch.
-    :type minswitch: int
-    :ivar sequence: Counter for movement sequences performed.
-    :type sequence: int
-    :ivar pulsewidth: Time delay between step pulses, controls stepper speed.
-    :type pulsewidth: float
-    :ivar moving: Status flag to indicate whether the stepper is currently moving.
-    :type moving: bool
-    :ivar calibrating: Status flag to indicate whether the stepper is in calibration mode.
-    :type calibrating: bool
-    :ivar moveled_pwm: PWM controller for the movement indicator LED.
-    :type moveled_pwm: GPIO.PWM
     """
     def __init__(self, direction, a, aa, b, bb, limmax, limmin, moveled):
         self.axis = direction

@@ -100,8 +100,8 @@ Read the json file
 def loadsettings()
 ```
 
-Replace the default settings with thsoe from the json files, if a setting is not in the json file (e.g. it is a
- new feature setitng) then retain the default value and write that to the json file. If the api-key is the default
+Replace the default settings with those from the json files, if a setting is not in the json file (e.g. it is a
+ new feature setting) then retain the default value and write that to the json file. If the api-key is the default
 value then generate a new key and save it.
 
 <a id="app_control.settings"></a>

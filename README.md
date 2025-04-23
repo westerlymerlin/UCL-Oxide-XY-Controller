@@ -1,14 +1,24 @@
 # UCL-Oxide-XY-Controller
-Python project to control an X-Y stage from a raspberry pi computer. 
+A Flask-based control system for managing an X-Y stage using a Raspberry Pi. This application provides precise control over two-axis movement through a web interface and API endpoints.
 
-Functional description and setup instructions are available in the file: [manual.pdf](./manual.pdf)
+## Features
 
+- Real-time X-Y stage position control
+- REST API for automated control
+- GPIO-based stepper motor control
+- Secure API key authentication
+- Configurable movement parameters
+
+## Setup information
+The functional description and setup instructions are available in the file: [manual.pdf](./manual.pdf)
+
+## Documentation
 Python module documentation can be found in the folder: [docs](./docs/readme.md)
-
 Change log can be found in the file [changelog.txt](./changelog.txt)
 
 
-### JSON Commands
+## Usage
+The api is managed by sending the following json messages in a [POST] to  serveraddress/api
 
 | Command | Description                                                  |
 |---|--------------------------------------------------------------|
